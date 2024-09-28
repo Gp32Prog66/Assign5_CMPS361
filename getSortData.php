@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<title>Assignment 5</title>
+
 <?php
 $API_URL = "http://localhost:8006/api/v1/selection";
+
+//Adding CSS
+
 
 //Fetching Data
 $response = file_get_contents($API_URL);
@@ -89,7 +97,7 @@ if ($data && is_array($data)) {
 
     //Display Previous link if not on first page
     if ($currentPage > 1) {
-        echo '<a href=?page=' . ($currentPage - 1) . '&sort=' . $sortColumn . '&music=' . $sortMusic . '">Previous</a> ';
+        echo '<a href=?page=' . ($currentPage - 1) . '&sort=' . $sortColumn . '&order=' . $sortMusic . '">Previous</a> ';
     }
 
     //Displaying Page Numbers
@@ -97,7 +105,7 @@ if ($data && is_array($data)) {
         if ($i == $currentPage) {
             echo "<strong>$i</strong";
         } else {
-            echo '<a href=?page' . $i . '&sort=' . $sortColumn . '$music=' . $sortMusic . '">' . $i . '</a> ';
+            echo '<a href=?page' . $i . '&sort=' . $sortColumn . '&order=' . $sortMusic . '">' . $i . '</a> ';
         }
 
         //Next Page
@@ -111,3 +119,5 @@ if ($data && is_array($data)) {
     echo "Data isn't available or an error is occuring ";
 }
 ?>
+
+</html>
