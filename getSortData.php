@@ -3,6 +3,17 @@
 
 <title>Assignment 5</title>
 
+<!--CSS-->
+<style>
+    .center
+    {
+        margin: auto;
+        width: 20%;
+    }
+</style>
+
+<div class="center">
+
 <?php
 $API_URL = "http://localhost:8006/api/v1/selection";
 
@@ -103,7 +114,7 @@ if ($data && is_array($data)) {
     //Displaying Page Numbers
     for ($i = 1; $i <= $totalPages; $i++) {
         if ($i == $currentPage) {
-            echo "<strong>$i</strong";
+            echo "<strong> $i </strong";
         } else {
             echo '<a href=?page' . $i . '&sort=' . $sortColumn . '&order=' . $sortMusic . '">' . $i . '</a> ';
         }
@@ -119,5 +130,6 @@ if ($data && is_array($data)) {
     echo "Data isn't available or an error is occuring ";
 }
 ?>
+</div>
 
 </html>
