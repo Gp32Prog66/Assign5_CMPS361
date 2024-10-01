@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-
+<link rel="stylesheet" type="text/css" href="styles.css">
 <title>Assignment 5</title>
 
+
+
+
 <!--CSS-->
-<style>
-    .center {
-        margin: auto;
-        width: 20%;
-    }
-</style>
+
 
 <div class="center">
+
+<h1>Music Selection</h1>
 
     <?php
     $API_URL = "http://localhost:8006/api/v1/selection";
