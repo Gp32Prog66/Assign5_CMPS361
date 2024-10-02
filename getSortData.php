@@ -3,12 +3,6 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <title>Assignment 5</title>
 
-
-
-
-<!--CSS-->
-
-
 <div class="center">
 
 <h1>Music Selection</h1>
@@ -84,9 +78,9 @@
         echo "<thead>";
 
         echo "<tr>";
-        echo "<th><a href ='?page=$currentPage&sort=id&order=" . toggleMusic($sortMusic) . ">id</a></th>";
-        echo "<th><a href ='?page=$currentPage&sort=artist&order=" . toggleMusic($sortMusic) . ">artist</a></th>";
-        echo "<th><a href ='?page=$currentPage&sort=album&order=" . toggleMusic($sortMusic) . ">album</a></th>";
+        echo "<th><a href='?page=$currentPage&sort=id&order=" . toggleMusic($sortMusic) . "'>id</a></th>";
+        echo "<th><a href='?page=$currentPage&sort=artist&order=" . toggleMusic($sortMusic) . "'>artist</a></th>";
+        echo "<th><a href='?page=$currentPage&sort=album&order=" . toggleMusic($sortMusic) . "'>album</a></th>";
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
